@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86d4ad38-ce73-4b01-920b-82071e84263b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Publish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Subscribe_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Subscribe_RoutingKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Subscribe_RoutingKey_error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Publish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Subscribe_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Subscribe_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/simplequeue/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/simplequeue/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/Receiver_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/Receiver_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/Send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/主题模式" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/TxReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/TxSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/AsyncConfirm/send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/Send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/rabbitmq的消息确认机制（事务+confirm）" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/util/ConnectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/workqueue/Rotationtrainingdistribution/Receiver_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/workqueue/Rotationtrainingdistribution/Receiver_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/workqueue/Rotationtrainingdistribution/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/workqueue/fairdistribution/Receiver_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/workqueue/fairdistribution/Receiver_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/workqueue/fairdistribution/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA8/src/main/java/com/whp/learn/interview/ArrayLiset_HashMap_Who_Fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA8/src/main/java/com/whp/learn/interview/ArrayLiset_HashMap_Who_Fast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_SOURCE/src/cn/whpcode/test/hashmap/HashMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_SOURCE/src/cn/whpcode/test/thread/lock/Lock8Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_SOURCE/src/cn/whpcode/test/thread/lock/Lock8Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_SOURCE/src/cn/whpcode/test/thread/notsafe/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_SOURCE/src/cn/whpcode/test/thread/notsafe/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../daily_learn/src/main/resources/conf/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../daily_learn/src/main/resources/conf/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/interview.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/META-INF/interview.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/atomic/AtomicIntegerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/atomic/AtomicSafe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/collections/list/ArrayListSources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/collections/list/LinkedListSources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/collections/list/SetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/collections/map/HashMapSources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/interface_and_abstract/interfaces/abstract_/AbstractSendMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/interface_and_abstract/interfaces/abstract_/AbstractSendMessageExtends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/interface_and_abstract/interfaces/interface_/SendMessageImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/interface_and_abstract/interfaces/interface_/SendMessageInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/interiew/Final.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/stack/demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/CreatThread_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/CreatThread_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/ObjectLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/SaleTicks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/SyncObjectLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/SynchronizedDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/synchronize/ThreadTrain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/AbstractQueuedSynchnorizer/CreateThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/AbstractQueuedSynchnorizer/CreateThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/AbstractQueuedSynchnorizer/ReentrantLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/AbstractQueuedSynchnorizer/ReentrantLockEnqueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/AbstractQueuedSynchnorizer/SourcesShare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/CallableThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/ExecutorPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/ExtendsThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/ImplementsCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/ImplementsRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/MyRunnableThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/CreateThreads4Ways/ThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/Consumer1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/Producer1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/Resources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/Sources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ProducerAndsumer/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/T1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/T2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/T3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ThreadLocal/ThreadLocalDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/ThreadLocal/ThreadLocalDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/Thread_Join_Demo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/Thread_Join_Demo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/Thread_Join_Demo$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/Thread_Join_Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/verdion1/BankVersion1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/verdion1/TicketWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/BankVersion2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/CalculatorStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/CalculatorStrategyImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/TaxCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/TaxCalculatorLambdaMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/TaxCalculatorMain1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/TaxCalculatorMain1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/StrategyMode/TaxCalculatorMain2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/demo/version2/TicketWindow2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/BigBoss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/Boss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/BaoHanThreadSalety.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/DoubleCheckLockSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/HolderSingleton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/HolderSingleton$SingletonHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/HolderSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/HungrySingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSalety/SynchronizedSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/singleton/ThreadSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadMain$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadMain$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadMain2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadMain3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadMain3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadStackOverFlowMain$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/ThreadStackOverFlowMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/daemon/DaemonThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/daemon/DaemonThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/thread/daemon/DaemonThread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/volatile_/VolatileVisibilityDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/volatile_/VolatileVisibilityDemo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/out/production/interview/thread/volatile_/VolatileVisibilityDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/atomic/AtomicIntegerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/collections/list/ArrayListSources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/collections/list/LinkedListSources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/collections/list/SetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/collections/map/HashMapSources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/interface_and_abstract/interfaces/abstract_/AbstractSendMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/interface_and_abstract/interfaces/abstract_/AbstractSendMessageExtends.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/interface_and_abstract/interfaces/interface_/SendMessageImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/interface_and_abstract/interfaces/interface_/SendMessageInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/interiew/Final.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/stack/demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/synchronize/ObjectLock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/synchronize/SaleTicks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/synchronize/SynchronizedDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/synchronize/ThreadTrain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/AbstractQueuedSynchnorizer/CreateThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/AbstractQueuedSynchnorizer/ReentrantLockDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/AbstractQueuedSynchnorizer/ReentrantLockEnqueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/CreateThreads4Ways/ExtendsThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/CreateThreads4Ways/ImplementsCallable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/CreateThreads4Ways/ImplementsRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/CreateThreads4Ways/ThreadPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/ProducerAndsumer/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/ProducerAndsumer/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/ProducerAndsumer/Resources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/ProducerAndsumer/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/ThreadLocal/ThreadLocalDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/Thread_Join_Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/verdion1/BankVersion1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/verdion1/TicketWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/BankVersion2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/StrategyMode/CalculatorStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/StrategyMode/CalculatorStrategyImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/StrategyMode/TaxCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/StrategyMode/TaxCalculatorLambdaMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/StrategyMode/TaxCalculatorMain1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/StrategyMode/TaxCalculatorMain2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/demo/version2/TicketWindow2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/singleton/ThreadSalety/BaoHanThreadSalety.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/singleton/ThreadSalety/HolderSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/singleton/ThreadSalety/HungrySingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/singleton/ThreadSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/thread/ThreadMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/thread/ThreadMain2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/thread/ThreadMain3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/thread/ThreadStackOverFlowMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/thread/daemon/DaemonThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/thread/daemon/DaemonThread2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interview/src/thread/volatile_/VolatileVisibilityDemo.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Publish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Subscribe_1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Publish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Subscribe_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="51" column="60" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/publishsubscribe/Subscribe_2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/routing/Subscribe_RoutingKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/Send.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/TxSend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/publishsubscribe/Publish.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/publishsubscribe/Subscribe_1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/routing/Publish.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Publish.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/ProgrameApp/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="$USER_HOME$/IdeaProjects/nsfopp_20181226/nsfopp-pom/mvn/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="fanout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="fanout" type="462c0819:PsiDirectoryNode" />
+              <item name="publishsubscribe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="simplequeue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="workqueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activemq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594455237938" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TxSend">
+    <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.rabbitmq.transaction.confirm.Send" />
+      <module name="rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.rabbitmq.transaction.confirm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TxSend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.rabbitmq.transaction.TxSend" />
+      <module name="rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.rabbitmq.transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TxSend" />
+        <item itemvalue="Application.Send" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86d4ad38-ce73-4b01-920b-82071e84263b" name="Default Changelist" comment="" />
+      <created>1591062567108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591062567108</updated>
+      <workItem from="1591062569621" duration="116000" />
+      <workItem from="1591490316401" duration="4063000" />
+      <workItem from="1594255377791" duration="7801000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11980000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1" y="22" width="1440" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32951653" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32951653" />
+      <window_info anchor="bottom" id="MyBatis Log" order="15" />
+      <window_info anchor="right" id="Translate" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/util/ConnectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/Receiver_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/Receiver_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Subscribe_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/topic/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Subscribe_RoutingKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="56" column="62" lean-forward="true" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Subscribe_RoutingKey_error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/TxSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/TxReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/rabbitmq的消息确认机制（事务+confirm）">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/transaction/confirm/AsyncConfirm/send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/ProgrameApp/apache-maven/oppmvn/com/rabbitmq/amqp-client/4.0.2/amqp-client-4.0.2-sources.jar!/com/rabbitmq/client/Envelope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding>
+            <element signature="e#1747#1748#0" expanded="true" />
+            <element signature="e#1782#1783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/ProgrameApp/apache-maven/oppmvn/com/rabbitmq/amqp-client/4.0.2/amqp-client-4.0.2-sources.jar!/com/rabbitmq/client/impl/ChannelN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3192">
+          <caret line="184" column="19" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Subscribe_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="51" column="60" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/ProgrameApp/apache-maven/oppmvn/com/rabbitmq/amqp-client/4.0.2/amqp-client-4.0.2-sources.jar!/com/rabbitmq/client/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Publish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/fanout/publishsubscribe/Subscribe_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/simplequeue/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/simplequeue/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/rabbitmq/direct/Publish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

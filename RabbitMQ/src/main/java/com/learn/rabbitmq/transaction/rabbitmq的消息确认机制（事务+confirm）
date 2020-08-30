@@ -1,0 +1,62 @@
+在rabbitmq中，我们可以通过持久化数据，解决rabbitmq服务器异常 ，丢失数据的问题
+
+问题：
+    生产者将消息发送出去之后，消息到底有没有到达 rabbitmq 服务器，默认情况下是不知道。
+
+消息确认的2种模式：
+    1. AMQP 实现了事务机制
+    2. Confirm 模式
+
+事务机制
+    1. txSelect  用户当前channel设置成 transaction模式
+    2. txCommit  提交事务
+    3. txRollback 回滚事务
+
+rabbitmq 的事务全部是用在---生产者上
+
+
+缺点：
+    会有大量的 事务请求发送到rabbitmq服务器上，导致服务器的吞吐量下降
+
+======================================================================================
+
+生产者端Confirm模式的实现原理
+
+      生产者将信道设置为confirm模式，一旦信道设置为confirm模式后，所有在该信道上面发布的消息都会被指派一个唯一的ID（从1开始），
+  一旦消息被投递到所有匹配的队列之后，broker就会发送一个确认给生产者（包含消息的唯一ID），这就使得生产者知道消息已经正确到达
+  目的队列了，如果消息和队列是可持久化的，那么确认消息会将消息写入到磁盘之后发出，broker回传给生产者的确认消息中
+  delivery-tag域包含了确认消息的序列号，此外，broker也可以设置basic-ack的multiple的域，
+  表示到这个序列号之前的所有消息都已经得到处理。
+
+
+Confirm模式最大的好处是：异步
+
+    当消息到达之后，生产者通过回调的方法来处理。
+
+    如果rabbitmq自身发生了异常（崩溃），导致消息丢失，rabbitmq就会发送一条Nack消息
+
+  开启confirm模式
+
+    channel.selectConfirm();
+
+   confirm编程模式：
+        1. 普通  一次发送一条消息  然后调用waitForConfirm()方法
+
+        2.批量  一次发送一批消息  然后调用waitForConfirm()方法
+
+        3.异步confirm模式： 提供一个回调方法
+
+
+RabbitMQ confirm的确认监听模式
+
+   添加确认监听需要开启确认监听模式 实现 addConfirmListener方法confirm模式最大的好处在于他是异步的，一旦发布一条消息，
+生产者应用程序就可以在等信道返回确认的同时继续发送下一条消息，当消息最终得到确认之后，生产者应用便可以通过回调方法来处理该确认消息，
+如果RabbitMQ因为自身内部错误导致消息丢失，就会发送一条nack消息，生产者应用程序同样可以在回调方法中处理该nack消息；
+
+
+   异步模式：
+
+        Channel对象提供的ConfirmListener()回调方法，包含deliveryTag（当前channel发出的消息序号）
+        我们需要自己为每一个channel维护一个unconfirm的消息集合，每publish一条数据，集合中元素+1，
+        每回调一次handleAck()方法，unconfirm集合删除相应的一条（multiple = false）或多条（multiple = true）记录。
+        从程序运行效率上看，unconfirm集合最好采用有序集合SortedSet存储结构。

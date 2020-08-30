@@ -1,0 +1,14 @@
+Topic Exchange 主题模式
+
+  在声明exchange的时候，将参数设置为："topic"，即将exchange定义为主题模式，
+主题模式routingKey可以通过通配符匹配消息
+
+将路由键 和 某种模式匹配
+
+    # ：匹配一个或者多个
+
+    * ：匹配一个
+
+    ???  # 和 * 的具体区别
+
+    例如：good.add、good.remove ,用good.#可以都匹配上
